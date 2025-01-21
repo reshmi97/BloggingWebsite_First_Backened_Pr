@@ -1,0 +1,13 @@
+<%- include("header.ejs")%>
+<link rel="stylesheet" href="/style/layout.css">
+<link rel="stylesheet" href="/style/content.css">
+<body>
+        <h1> Create Your New Blog </h1>
+        <form action="/submit" method="POST">
+                <input name="title" type="text" class="feedback-input" placeholder="Blog Title" />
+                <input name="description" type="text" class="feedback-input" placeholder="Description" />
+                <textarea name="text" class="feedback-input" placeholder="Wrtie your blog"></textarea>
+                <input type="submit" value="SUBMIT" />
+              </form>
+</body>
+<%- include("footer.ejs")%>
